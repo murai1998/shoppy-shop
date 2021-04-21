@@ -1,0 +1,11 @@
+<div *ngIf="product">
+    <h2>Details</h2>
+<div>
+    <label for="product-name">Product: </label>
+    <input id="hero-name" [(ngModel)]="product.name" placeholder="name">
+  </div>
+  <div>
+    <label for="product-description">Product: </label>
+    <input id="hero-description" [(ngModel)]="product.description" placeholder="description">
+  </div>
+</div>
