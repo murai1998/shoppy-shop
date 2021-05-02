@@ -1,0 +1,8 @@
+<button (click)="handleAdd()">Show favorites</button>
+<form #my_form = "ngForm" (ngSubmit)="addNewItem(my_form)" >
+    <input type="text" value="" name="fav" ngModel/>
+    <button>Submit</button>
+</form>
+<ul>
+    <li *ngFor="let pr of favPr">{{pr}}</li>
+</ul>
